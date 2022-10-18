@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BAM</title>
     <style>
         .header__browser {
             width: 100vw;
@@ -24,21 +24,21 @@
             margin-right: 300px;
         }
 
-        .header-container__buttom {
+        .header-container__input {
             padding-top: 10px;
-
         }
 
         .main-container {
-            display: grid;
-            grid-template-columns: 1ft 1fr;
-
+            display: flex;
+            justify-content: space-between;
+            min-width: 500px;
         }
+
 
         .main-container__blok {
             display: grid;
             grid-row: repeat (3, 1fr);
-            max-width: 400px;
+
         }
 
         .main-container__botton_img {
@@ -60,9 +60,27 @@
             font-size: 60px;
         }
 
-        /* .container-main__container {
+        .main-container__blok_bakcground {
+            position: fixed;
+            right: 0vh;
             height: 100vh;
-        } */
+        }
+
+        .main-container__input:hover {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+
+        .navigation {
+            width: 100vw;
+            height: 10vh;
+            margin-left: 100px;
+        }
+
+        .navigation__href {
+            margin: 10px;
+            text-decoration: none;
+        }
     </style>
     <link rel="stylesheet" href="assect/img/stylescss/styles.css">
 </head>
@@ -79,42 +97,31 @@
         <div class="header-container__buttom"><img src="assect/img/button-cart.png" alt="box" />
         </div>
     </div>
-
-
-
     <main class="main-container">
-        <div class="main-container__blok">
-            <div class="background-img">
-                <img src="assect/img/pic.png" alt="fon" />
-            </div>
-        </div>
         <div class="main-container__blok">
             <h1 class="main-container__h1">ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ БЕЗ ПРОВОДОВ</h1>
             <p class="main-container__text">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный
                 шлем
                 без проводов и дорогих
                 комьютеров.</p>
-            <div class="main-container__botton">
+            <div class="main-container__input">
                 <img class="main-container__botton_img" src="assect/img/button-buy.png" alt="купить" />
             </div>
         </div>
+        <div class="background-img">
+            <img src="assect/img/pic.png" alt="fon" />
         </div>
-
     </main>
 
-    <!-- <div class="background-img">
-        <img src="assect/img/pic.png" alt="fon" />
-    </div>
 
- -->
-
-
-
-
-
-
-
-
+    <footer class="footer">
+        <nav class="navigation">
+            <a class="navigation__href" href="indexpagetwo.html">Возможности</a>
+            <a class="navigation__href" href="#">Где купить</a>
+            <a class="navigation__href" href="#">Доставка</a>
+            <a class="navigation__href" href="#">Помощь</a>
+        </nav>
+    </footer>
 
 
 </body>
